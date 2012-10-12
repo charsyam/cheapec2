@@ -8,11 +8,6 @@ var App = {
         this.RegisterPartials()
         this.RegisterHelpers()
 
-        var ServerDropDown = new ServerList({            
-            el : $("#server-list")
-          , model : new ServerListModel()
-        })
-
         var RegionDropDown = new RegionList({            
             el : $("#region-list")
           , model : new RegionListModel()
@@ -37,26 +32,6 @@ var App = {
             el : $("#info-widget-placeholder")
           , model : new InfoWidgetModel()
         })
-
-        var memoryWidget = new MemoryWidget({
-            el : $("#memory-widget-placeholder")
-          , model : new MemoryWidgetModel()
-        })  
-
-        var commandsWidget = new CommandsWidget({            
-            el : $("#commands-widget-placeholder")
-          , model : new CommandsWidgetModel()
-        })        
-        
-        var topCommandsWidget = new TopCommandsWidget({            
-            el : $("#top-commands-widget-placeholder")
-          , model : new TopCommandsWidgetModel()
-        })        
-
-        var topKeysWidget = new TopKeysWidget({            
-            el : $("#top-keys-widget-placeholder")
-          , model : new TopKeysWidgetModel()
-        })        
     }
 
   , RegisterPartials : function(){

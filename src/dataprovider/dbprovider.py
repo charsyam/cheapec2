@@ -97,11 +97,7 @@ class PriceRI3(Base):
 
 class EC2SpotInstancePriceProvider(object):
     def make_driver_key(self):
-        config = settings.get_dbdriver()
-        driver = "%s://%s:%s@%s/%s"%(config['type'], config['user'],
-                                    config['password'], config['server'],
-                                    config['dbname'])
-        return driver
+        return settings.get_dbdriver()
 
     def __init__(self):
         self.engine = create_engine(self.make_driver_key())
