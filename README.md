@@ -11,6 +11,15 @@ show this graph. now cheapec2 can just show the gap of ec2 prices
 
 ![Cheap EC2](https://github.com/charsyam/cheapec2/blob/master/design/cheapec2.png?raw=true "CheapEC2")
 
+Require Package
+---------------
+* tornado
+* sqlalchemy
+
+Settings
+--------
+1. copy cheapec2.conf to /etc or change code src/api/util/settings.py
+
 Authors
 -------
 
