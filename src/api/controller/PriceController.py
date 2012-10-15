@@ -1,9 +1,7 @@
 from BaseController import BaseController
 import tornado.ioloop
 import tornado.web
-import dateutil.parser
 import datetime
-import dateutil
 
 class PriceController(BaseController):
     def change2datetime(self,str_date):

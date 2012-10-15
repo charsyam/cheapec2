@@ -1,6 +1,5 @@
 import tornado.ioloop
 import tornado.web
-import dateutil.parser
 from dataprovider.dataprovider import EC2SpotInstancePriceProvider
 
 
